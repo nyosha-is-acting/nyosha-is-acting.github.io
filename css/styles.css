@@ -4,6 +4,7 @@ Date: 8/17/26
 File: styles.css
 */
 
+
 /* ok this one will be with the first color palette and then ill make another one with the other */
 @font-face {
   font-family: "planetLight";
@@ -14,7 +15,7 @@ File: styles.css
 
 :root {
   --bg-primary: #f6efd2;
-  --accent-red: red;
+  --accent-red: #ff3800 ;
   --resume-bg: #f6efd2;
 }
 
@@ -80,7 +81,7 @@ body {
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 50px;
-  background-color: red;
+  background-color: #ff3800;
   color: #f6efd2;
 }
 
@@ -100,7 +101,7 @@ body {
 
 /* The active link reverses the normal red background and light text colors. */
 #nav-links li:has(a.active) {
-  background-color: red;
+  background-color: #ff3800;
 }
 
 #nav-links li a.active {
@@ -109,12 +110,12 @@ body {
 
 a {
   text-decoration: none;
-  color: red;
+  color: #ff3800;
   font-weight: bold;
 }
 
 a:focus-visible {
-  outline: 3px solid red;
+  outline: 3px solid #ff3800;
   outline-offset: 4px;
 }
 
@@ -140,7 +141,7 @@ a:focus-visible {
     border: 0;
     padding: 0.25rem 0.5rem;
     background: transparent;
-    color: red;
+    color: #ff3800;
     font: inherit;
     font-size: 2rem;
     line-height: 1;
@@ -168,7 +169,7 @@ a:focus-visible {
     right: 1.5rem;
     border: 0;
     background: transparent;
-    color: red;
+    color: #ff3800;
     font: inherit;
     font-size: 3rem;
     line-height: 1;
@@ -194,13 +195,13 @@ a:focus-visible {
     display: block;
     padding: 0.65rem 1rem;
     border-radius: 50px;
-    color: red;
+    color: #ff3800;
     font-size: 1.5rem;
   }
 
   /* The current section keeps the same inverted colors inside the mobile menu. */
   #nav-links li:has(a.active) {
-    background-color: red;
+    background-color: #ff3800;
   }
 
   #nav-links li a.active {
@@ -210,7 +211,7 @@ a:focus-visible {
   #nav-toggle:focus-visible,
   #nav-close:focus-visible,
   #nav-links a:focus-visible {
-    outline: 3px solid red;
+    outline: 3px solid #ff3800;
     outline-offset: 4px;
   }
 }
@@ -243,7 +244,7 @@ a:focus-visible {
   top: 5%;
   left: 16px;
   color: #f6efd2;
-  background-color: red;
+  background-color: #ff3800 ;
   padding: 1rem;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -255,7 +256,7 @@ a:focus-visible {
   top: 5%;
   right: 16px;
   color: #f6efd2;
-  background-color: red;
+  background-color: #ff3800 ;
   padding: 1rem;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -268,7 +269,7 @@ a:focus-visible {
   top: 10%;
   left: 16px;
   color: #f6efd2;
-  background-color: red;
+  background-color: #ff3800;
   padding: 1rem;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -280,7 +281,7 @@ a:focus-visible {
   top: 10%;
   right: 16px;
   color: #f6efd2;
-  background-color: red;
+  background-color: #ff3800;
   padding: 1rem;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -305,7 +306,7 @@ a:focus-visible {
   margin: 0;
    padding: 0.5rem 0.7rem;
   border-radius: 50px;
-  background-color: red;
+  background-color: #ff3800;
 }
 
 #about-subtitle {
@@ -318,7 +319,7 @@ a:focus-visible {
 
 /* Main content box */
 #about-header {
-  background-color: var(--accent-red); /* red */
+  background-color:#ff3800; /* red */
   border-radius: 1rem;
   padding: 2rem;
   display: flex;
@@ -367,9 +368,13 @@ a:focus-visible {
   flex: 1;
   min-width: 0;
 }
-
+#about-blurb p{
+  color:#f6efd2;
+  font-size: 1.5rem;
+  text-align:center;
+}
 #about-blurb h3 {
-  color: black;
+  color: #f6efd2;
   text-align:center;
   line-height: 1.6;
   padding: 0 1rem;
@@ -377,7 +382,7 @@ a:focus-visible {
 }
 
 .photo-link{
-  color: black;
+  color: #f6efd2;
   text-decoration: underline;
 }
 
@@ -427,7 +432,7 @@ a:focus-visible {
   content: "";
   position: absolute;
   inset: 0 0 1.5rem;
-  background-color: red;
+  background-color: #ff3800;
   /* background-image:
     radial-gradient(50% 1.5rem at 50% 0, #8b0000  0 95%, transparent 96%),
     radial-gradient(50% 1.5rem at 50% 0, red 0 95%, transparent 96%),
@@ -449,7 +454,7 @@ a:focus-visible {
   height: 1.5rem;
   background: radial-gradient(
     50% 1.5rem at 50% 0,
-    red 0 95%,
+    #ff3800 0 95%,
     transparent 1.25rem
   ) repeat-x;
   background-size: calc(100% / 12) 2rem;/*3rem 1.5rem; */
@@ -499,7 +504,7 @@ a:focus-visible {
     padding: 0;
     border: 0;
     border-radius: 50%;
-    background-color: red;
+    background-color: #ff3800;
     color: #ffffff;
     font: inherit;
     font-size: 2rem;
@@ -523,7 +528,7 @@ a:focus-visible {
   }
 
   .show-title-n-photo-credits {
-    color: red;
+    color: #ff3800;
     font-size: 1rem;
     font-weight: bold;
     position: absolute;
@@ -778,7 +783,7 @@ a:focus-visible {
 
 /* ! CONTACT !*/
 .contact-container {
-  background-color: red;
+  background-color: #ff3800;
   padding: 2rem;
   border-radius: 0 0 50px 50px;
 }
@@ -816,11 +821,11 @@ a:focus-visible {
   margin: 0;
    padding: 0.5rem 0.7rem;
   border-radius: 50px 50px 0 0;
-  background-color: red;
+  background-color: #ff3800;
 }
 #contact-subtitle {
   text-align: center;
-  background-color: red;
+  background-color: #ff3800;
   font-size: 0.9rem;
   color: #f6efd2;
   
@@ -837,7 +842,7 @@ a:focus-visible {
 /* Footer */
 footer {
   background-color: #f6efd2;
-  color: red;
+  color: #ff3800;
   padding: 10px;
   text-align: center;
 }
