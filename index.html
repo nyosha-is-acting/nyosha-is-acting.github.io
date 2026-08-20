@@ -1,0 +1,235 @@
+<!-- Template evrything then comment it out as you go -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/script.js" defer></script>
+    <title>Nyosha Homicil Website</title>
+</head>
+
+<body>
+    <!-- Done Done Done -->
+    <div class="header">
+        <div id="name-header">
+            <a href="#home-container" id="name-header-color"><h1>Nyosha Homicil</h1></a>
+        </div>
+        <!-- This button is only shown on small screens to open the mobile menu. -->
+        <button id="nav-toggle" type="button" aria-controls="nav-bar" aria-expanded="false">
+            <span aria-hidden="true">&#9776;</span>
+            <span class="sr-only">Open navigation menu</span>
+        </button>
+        <div id="nav-bar">
+            <!-- This button closes the full-screen mobile menu. -->
+            <button id="nav-close" type="button" aria-controls="nav-bar" aria-label="Close navigation menu">
+                <span aria-hidden="true">&#10005;</span>
+            </button>
+            <ul id="nav-links">
+                <li><a href="#home-container">Home</a></li>
+                <li><a href="#about-container">About</a></li>
+                <li><a href="#media-container">Media</a></li>
+                <li><a href="#headshot-resume-container">Headshot/Resume</a></li>
+                <li><a href="#contact-container">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <div id="home-container">
+            <!-- !!make different for mobile!! -->
+            <div id="hero-container">
+
+                <!-- This is will be 3 photos fading in and out rotating 2 sec each? ...lets do the simple version first -->
+                <!-- <div id="rotating-headshots"> -->
+                <!-- </div> -->
+                <img src="./assets/headshots/6X5A8063(1).JPG" alt="Nyosha Homicil headshot" id="header-img">
+                <div class="bottom-center">
+
+                    <div class="top-right">
+                        <h1 id="list-one">Actress</h1>
+                    </div>
+                    <div class="middle-right">
+                        <h1 id="list-two">Singer</h1>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <!-- about section -->
+        <div id="about-container">
+            <h2 id="about-title">About Me</h2>
+            <p id="about-subtitle">↓ Down Here ↓</p>
+            <div id="about-header">
+                <div id="about-headshot">
+                    <img src="./assets/headshots/6X5A7963.jpg" alt="Nyosha Homicil headshot">
+                    <img src="./assets/headshots/6X5A8071.JPG" alt="Nyosha Homicil headshot">
+                    <img src="./assets/headshots/6X5A8078.JPG" alt="Nyosha Homicil headshot">
+                </div>
+                <!-- <p id="about-subtitle" style="@media screen (max-width: 768px){
+                    
+                }">↓ No no! That's a photo *of* me. Down Heeerreee. Lol. ↓</p> -->
+                <div id="about-blurb">
+                    <p>
+                        Hello! Hello!
+                        I act! But why? Well, it’s one of the ways for me to express the different facets of my personality while getting getting to work with wonderful and talented people across theatrical productions be it on stage or off stage.
+                        When I'm not on stage,but in the theater, I absolutely love being a spotlight operator. Dare I say it's one of the best views in the house.
+                    </p>
+                    <p> When I'm not on stage and outside the theater I like to play video games, take <a href="https://nyoshaphotography.wordpress.com/" target="_blank" rel="noopener noreferrer" class="photo-link">Photos</a>, learn Japanese, try new recipes, and read. Oh! And I also like making websites from 
+                        "scratch" like this one you're on (Thank You Computer Science Degree!). 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- media section -->
+        <div id="media-container">
+            <div id="awning">
+                <p>"Life Upon The Wicked Stage ugh"</p>
+            </div>
+            <div class="show-gallery">
+
+
+                <div class="row">
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="./assets/show-photos/Something-Rotten-4.jpg" alt="Nyosha Homicil as Bea in Something Rotten" aria-describedby="gallery-caption-1">
+                            <button class="media-info-button" type="button" aria-label="Show information for Something Rotten" aria-expanded="false" aria-controls="gallery-caption-1">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-1">
+                                <div class="show-title-n-photo-credits">Something Rotten / Bea / ASAPhotographic
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="./assets/show-photos/Donkey-3.webp" alt="Nyosha Homicil as Donkey in Shrek: The Musical" aria-describedby="gallery-caption-2">
+                            <button class="media-info-button" type="button" aria-label="Show information for Shrek: The Musical" aria-expanded="false" aria-controls="gallery-caption-2">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-2">
+                                <div class="show-title-n-photo-credits">Shrek: The Musical / Donkey / Art Illman</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="./assets/show-photos/The-Prom-1.jpg" alt="Nyosha Homicil as Dee Dee Allen in The Prom" aria-describedby="gallery-caption-3">
+                            <button class="media-info-button" type="button" aria-label="Show information for The Prom" aria-expanded="false" aria-controls="gallery-caption-3">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-3">
+                                <div class="show-title-n-photo-credits">The Prom / Dee Dee Allen / ASAPhotographic</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="./assets/show-photos/Phantom-2.JPEG" alt="Nyosha Homicil as Madame Giry in The Phantom of the Opera" aria-describedby="gallery-caption-4">
+                            <button class="media-info-button" type="button" aria-label="Show information for The Phantom of the Opera" aria-expanded="false" aria-controls="gallery-caption-4">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-4"><div class="show-title-n-photo-credits">The Phantom of The Opera / Madame Giry / ASAPhotographic</div></div>
+                        </div>
+
+                        <div class="image-container">
+                            <img src="./assets/show-photos/The-Prom-2.jpg" alt="Nyosha Homicil as Dee Dee Allen in The Prom" aria-describedby="gallery-caption-5">
+                            <button class="media-info-button" type="button" aria-label="Show information for The Prom" aria-expanded="false" aria-controls="gallery-caption-5">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-5"><div class="show-title-n-photo-credits">The Prom / Dee Dee Allen / ASAPhotographic</div></div>
+                        </div>
+                      
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="./assets/show-photos/Jungle-Book-2.jpg" alt="Nyosha Homicil in the ensemble of The Jungle Book" aria-describedby="gallery-caption-6">
+                            <button class="media-info-button" type="button" aria-label="Show information for The Jungle Book" aria-expanded="false" aria-controls="gallery-caption-6">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-6"><div class="show-title-n-photo-credits">The Jungle Book / Ensemble / ASAPhotographic</div></div>
+                        </div>
+                        <div class="image-container">
+                            <img src="./assets/show-photos/Something-Rotten-2.jpg" alt="Nyosha Homicil as Bea in Something Rotten" aria-describedby="gallery-caption-7">
+                            <button class="media-info-button" type="button" aria-label="Show information for Something Rotten" aria-expanded="false" aria-controls="gallery-caption-7">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-7"><div class="show-title-n-photo-credits">Something Rotten / Bea / ASAPhotographic</div></div>
+                        </div>
+                     
+                    </div>
+                    <div class="column">
+                        <div class="image-container">
+                            <img src="./assets/show-photos/The-Prom-3.jpg" alt="Nyosha Homicil as Dee Dee Allen in The Prom" aria-describedby="gallery-caption-8">
+                            <button class="media-info-button" type="button" aria-label="Show information for The Prom" aria-expanded="false" aria-controls="gallery-caption-8">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-8"><div class="show-title-n-photo-credits">The Prom / Dee Dee Allen / ASAPhotographic</div></div>
+                        </div>
+                        <div class="image-container">
+                            <img src="./assets/show-photos/Something-Rotten-1.jpg" alt="Nyosha Homicil as Bea in Something Rotten" aria-describedby="gallery-caption-9">
+                            <button class="media-info-button" type="button" aria-label="Show information for Something Rotten" aria-expanded="false" aria-controls="gallery-caption-9">
+                                i
+                            </button>
+                            <div class="overlay" id="gallery-caption-9"><div class="show-title-n-photo-credits">Something Rotten / Bea / ASAPhotographic</div></div>
+                        </div>
+                      
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- headshot/resume section -->
+        <!-- title, container -> div resume , div headshots- -->
+        <div id="headshot-resume-header">
+            <h2>Headshot/Resume</h2>
+        </div>
+        <div id="headshot-resume-container">
+
+            <div id="headshots-left">
+                <img src="./assets/headshots/Nyosha_8x10-1.jpg" alt="Nyosha Homicil headshot">
+                <img src="./assets/headshots/6X5A8029.JPG" alt="Nyosha Homicil headshot">
+            </div>
+            <div id="resume">
+                <object data="./assets/documents/Nyosha Homicil Resume-4.pdf" type="application/pdf" aria-label="Nyosha Homicil acting resume">
+                    <p><a href="./assets/documents/Nyosha Homicil Resume-4.pdf">View Nyosha Homicil acting resume</a></p>
+                </object>
+                <div id="resume-download-button">
+                    <a href="./assets/documents/Nyosha Homicil Resume-4.pdf" download="Nyosha-Homicil-Resume.pdf" target="_blank" rel="noopener noreferrer">Download
+                        Resume</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- This was template code -->
+        <h2 id="contact-title">Don't Just Stand There, Say Something!</h2>
+        <p id="contact-subtitle">↓ Please :D ↓</p>
+        <div id="contact-container" class="contact-container">
+            <div class="contact-links">
+                <a href="" aria-label="Email Nyosha Homicil">
+                    <img src="./assets/contact-assets/email.png" alt="Email">
+                </a>
+                <a href="" aria-label="Visit Nyosha Homicil on LinkedIn">
+                    <img src="./assets/contact-assets/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <h2 id="footer-header">&copy Nyosha Homicil 2026</h2>
+    </footer>
+</body>
+
+</html>
