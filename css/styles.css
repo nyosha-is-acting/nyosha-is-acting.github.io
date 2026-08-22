@@ -75,9 +75,7 @@ body {
 }
 
 #name-header {
-  text-decoration: underline;
-  text-decoration-color: #f6efd2;
-  text-decoration-thickness: 2px;
+  
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -473,7 +471,6 @@ a:focus-visible {
   font-weight:bold;
 
 }
-
   
   .overlay {
     position: absolute;
@@ -540,6 +537,22 @@ a:focus-visible {
     text-align: center;
   }
 
+  .video-gallery{
+    background-color: black;
+  }
+
+  .video-gallery:focus-visible {
+    outline: 3px solid #ff3800;
+    outline-offset: 4px;
+  }
+
+    .video-gallery p{
+     color:#f6efd2;
+  font-size: 1.5rem;
+  text-align:center;
+  margin: 0 auto;
+  }
+  
 @media (max-width: 768px) {
   #awning {
     padding: .2rem 1rem 3.5rem;
