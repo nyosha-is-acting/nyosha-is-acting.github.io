@@ -385,6 +385,14 @@ a:focus-visible {
 }
 
 @media (max-width: 768px) {
+  #about-container {
+  background-color: var(--bg-primary); /* orange */
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
   #about-headshot {
     position: relative;
     width: 100%;
@@ -406,6 +414,10 @@ a:focus-visible {
     flex: 1;
     min-width: 0;
     width: 100%;
+  }
+
+  #about-blurb p{
+    font-size: 20px;
   }
 
   #about-blurb h3 {
@@ -452,8 +464,8 @@ a:focus-visible {
   height: 1.5rem;
   background: radial-gradient(
     50% 1.5rem at 50% 0,
-    #ff3800 0 95%,
-    transparent 1.25rem
+    #ff3800 0 99%,
+    transparent 1.5rem
   ) repeat-x;
   background-size: calc(100% / 12) 2rem;/*3rem 1.5rem; */
 }
@@ -471,13 +483,27 @@ a:focus-visible {
   font-weight:bold;
 
 }
-  
+@media (max-width: 768px) {
+  #awning::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 1.5rem;
+  background: radial-gradient(
+    50% 1.5rem at 50% 0,
+    #ff3800 0 95%,
+    transparent 100%
+  ) repeat-x;
+  background-size: calc(100% / 9) 2rem;/*3rem 1.5rem; */
+}
+}
   .overlay {
     position: absolute;
-    top: 0;
+    
     bottom: 0;
-    left: 0;
-    right: 0;
+   
     height: 35%;
     width: 100%;
     opacity: 0;
@@ -852,6 +878,17 @@ a:focus-visible {
   .name-row {
     flex-direction: column;
   }
+ 
+  #contact-title
+ {
+  color: #f6efd2; /* teal */
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+   padding: 0.5rem 0.7rem;
+  border-radius: 50px 50px 0 0;
+  background-color: #ff3800;
+}
 }
 
 /* Footer */
